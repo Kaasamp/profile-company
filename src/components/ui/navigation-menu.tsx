@@ -129,6 +129,7 @@ function NavigationMenuLink({
   return (
     <NavigationMenuPrimitive.Link
       data-slot="navigation-menu-link"
+      suppressHydrationWarning
       className={cn(
         "flex items-center gap-2 rounded-none p-2 text-xs transition-all outline-none",
         className

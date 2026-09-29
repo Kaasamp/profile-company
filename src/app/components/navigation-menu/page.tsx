@@ -52,7 +52,9 @@ export function MenuLandingPage() {
       <NavigationMenuList>
         {/* Perbaikan untuk Home: Jangan pakai asChild jika langsung Link */}
         <NavigationMenuItem>
-          <Link href="/" legacyBehavior passHref>
+          <Link href="/">
+            {/* @next-codemod-error This Link previously used the now removed `legacyBehavior` prop, and has a child that might not be an anchor. The codemod bailed out of lifting the child props to the Link. Check that the child component does not render an anchor, and potentially move the props manually to Link. */
+            }
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Home
             </NavigationMenuLink>
@@ -95,7 +97,9 @@ export function MenuLandingPage() {
 
         {/* Perbaikan untuk Docs */}
         <NavigationMenuItem>
-          <Link href="/docs" legacyBehavior passHref>
+          <Link href="/docs">
+            {/* @next-codemod-error This Link previously used the now removed `legacyBehavior` prop, and has a child that might not be an anchor. The codemod bailed out of lifting the child props to the Link. Check that the child component does not render an anchor, and potentially move the props manually to Link. */
+            }
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Docs
             </NavigationMenuLink>
@@ -103,7 +107,7 @@ export function MenuLandingPage() {
         </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>
-  )
+  );
 }
 
 function ListItem({
@@ -114,7 +118,9 @@ function ListItem({
 }: React.ComponentPropsWithoutRef<"li"> & { href: string }) {
   return (
     <li {...props}>
-      <Link href={href} legacyBehavior passHref>
+      <Link href={href}>
+        {/* @next-codemod-error This Link previously used the now removed `legacyBehavior` prop, and has a child that might not be an anchor. The codemod bailed out of lifting the child props to the Link. Check that the child component does not render an anchor, and potentially move the props manually to Link. */
+        }
         <NavigationMenuLink className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
           <div className="text-sm font-medium leading-none">{title}</div>
           <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
@@ -123,5 +129,5 @@ function ListItem({
         </NavigationMenuLink>
       </Link>
     </li>
-  )
+  );
 }
