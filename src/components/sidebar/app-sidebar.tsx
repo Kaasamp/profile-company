@@ -1,8 +1,11 @@
 import Link from "next/link"
 import {
   LayoutDashboard,
-  Users,
+  UserRound,
   BookOpen,
+  GraduationCap,
+  Newspaper,
+  CircleUserRound,
 } from "lucide-react"
 
 import {
@@ -48,11 +51,11 @@ export default function AppSidebar() {
             <SidebarMenuItem>
               <SidebarMenuButton className="text-white hover:bg-blue-700 hover:text-white">
                 <Link
-                  href="/admin/users"
+                  href="/admin/User"
                   className="flex items-center gap-3">
-                  <Users className="w-4 h-4" />
-                  <span>Users</span>
-                </Link>
+                  <UserRound className="w-4 h-4" />
+                  <span>User Management</span>
+                </Link> 
               </SidebarMenuButton>
             </SidebarMenuItem>
 
@@ -67,10 +70,44 @@ export default function AppSidebar() {
               </SidebarMenuButton>
             </SidebarMenuItem>
 
+            <SidebarMenuItem>
+              <SidebarMenuButton className="text-white hover:bg-blue-700 hover:text-white">
+                <Link
+                  href="/admin/jurusan"
+                  className="flex items-center gap-3">
+                  <GraduationCap className="w-4 h-4" />
+                  <span>Jurusan</span>
+                </Link>
+              </SidebarMenuButton>
+            </SidebarMenuItem>
+
+            <SidebarMenuItem>
+              <SidebarMenuButton className="text-white hover:bg-blue-700 hover:text-white">
+                <Link
+                  href="/admin/artikel"
+                  className="flex items-center gap-3">
+                  <Newspaper className="w-4 h-4" />
+                  <span>Artikel</span>
+                </Link>
+              </SidebarMenuButton>
+            </SidebarMenuItem>
+
+            <SidebarMenuItem>
+              <SidebarMenuButton className="text-white hover:bg-blue-700 hover:text-white">
+                <Link
+                  href="/admin/jurusan"
+                  className="flex items-center gap-3">
+                  <CircleUserRound className="w-4 h-4" />
+                  <span>Profile</span>
+                </Link>
+              </SidebarMenuButton>
+            </SidebarMenuItem>
+
           </SidebarMenu>
         </SidebarGroup>
       </SidebarContent>
       <SidebarFooter className="!bg-blue-600" />
+
 
     </Sidebar>
   )

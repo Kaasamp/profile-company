@@ -11,11 +11,11 @@ import {
 
 import { Card } from "@radix-ui/themes";
 
-export default function UserSiswa() {
+export default function Jurusan() {
   return (
     <Card className="m-6">
-      <h1 className="text-2xl font-bold mb-4">Siswa</h1>
-      <p>Kelola data siswa SMK MVP ARS INTERNASIONAL</p>
+      <h1 className="text-2xl font-bold mb-4">Jurusan</h1>
+      <p>Kelola Jurusan SMK MVP ARS INTERNASIONAL</p>
       <Table>
   <TableHeader>
     <TableRow>
