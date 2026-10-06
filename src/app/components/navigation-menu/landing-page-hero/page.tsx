@@ -1,6 +1,6 @@
 export function LandingPageHero() {
     return (
-        <section className="flex flex-1 w-full min-h-screen bg-blue-800 dark:bg-black items-center justify-center px-6 text-center pt-[100px]">
+        <section className="flex flex-1 w-full min-h-[115vh] bg-blue-800 dark:bg-black items-center justify-center px-6 text-center">
             <div className="container">
                 <div>
                     <h1 className="font-mono text-4xl font-bold tracking-tight text-white sm:text-6xl">
