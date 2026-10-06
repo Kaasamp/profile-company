@@ -95,7 +95,7 @@ export default function AppSidebar() {
             <SidebarMenuItem>
               <SidebarMenuButton className="text-white hover:bg-blue-700 hover:text-white">
                 <Link
-                  href="/admin/jurusan"
+                  href="/admin/profile"
                   className="flex items-center gap-3">
                   <CircleUserRound className="w-4 h-4" />
                   <span>Profile</span>
