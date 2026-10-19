@@ -22,23 +22,23 @@ import {
 
 export default function AppSidebar() {
   return (
-    <Sidebar className="!bg-blue-600">
+    <Sidebar className="!bg-gradient-to-b !from-pink-500 !via-rose-500 !to-pink-700 text-slate-900">
       
-      <SidebarHeader className="!bg-blue-600 text-white">
+      <SidebarHeader className="!bg-gradient-to-b !from-pink-500 !via-rose-500 !to-pink-700 text-slate-900">
         <SidebarMenu>
           <SidebarMenuItem>
           </SidebarMenuItem>
         </SidebarMenu>
       </SidebarHeader>
 
-      <SidebarContent className="!bg-blue-600">
+      <SidebarContent className="!bg-gradient-to-b !from-pink-500 !via-rose-500 !to-pink-700 text-slate-900">
         <div className="flex items-center justify-center p-4"></div>
         <img src="/img/smk_mvp_ars_logo_white.png" alt="Logo" className="w-150 h-15 mx-auto mb-4 object-contain" />
         <SidebarGroup>
-          <SidebarGroupLabel className="text-blue-100">Menu Utama</SidebarGroupLabel>
+          <SidebarGroupLabel className="text-pink-100">Menu Utama</SidebarGroupLabel>
           <SidebarMenu>
             <SidebarMenuItem>
-              <SidebarMenuButton className="text-white hover:bg-blue-700 hover:text-white">
+              <SidebarMenuButton className="text-white hover:bg-pink-800 hover:text-white">
                 <Link
                   href="/admin"
                   className="flex items-center gap-3">
@@ -49,7 +49,7 @@ export default function AppSidebar() {
             </SidebarMenuItem>
 
             <SidebarMenuItem>
-              <SidebarMenuButton className="text-white hover:bg-blue-700 hover:text-white">
+              <SidebarMenuButton className="text-white hover:bg-pink-800 hover:text-white">
                 <Link
                   href="/admin/User"
                   className="flex items-center gap-3">
@@ -60,7 +60,7 @@ export default function AppSidebar() {
             </SidebarMenuItem>
 
             <SidebarMenuItem>
-              <SidebarMenuButton className="text-white hover:bg-blue-700 hover:text-white">
+              <SidebarMenuButton className="text-white hover:bg-pink-800 hover:text-white">
                 <Link
                   href="/admin/category"
                   className="flex items-center gap-3">
@@ -71,7 +71,7 @@ export default function AppSidebar() {
             </SidebarMenuItem>
 
             <SidebarMenuItem>
-              <SidebarMenuButton className="text-white hover:bg-blue-700 hover:text-white">
+              <SidebarMenuButton className="text-white hover:bg-pink-800 hover:text-white">
                 <Link
                   href="/admin/jurusan"
                   className="flex items-center gap-3">
@@ -82,7 +82,7 @@ export default function AppSidebar() {
             </SidebarMenuItem>
 
             <SidebarMenuItem>
-              <SidebarMenuButton className="text-white hover:bg-blue-700 hover:text-white">
+              <SidebarMenuButton className="text-white hover:bg-pink-800 hover:text-white">
                 <Link
                   href="/admin/artikel"
                   className="flex items-center gap-3">
@@ -93,7 +93,7 @@ export default function AppSidebar() {
             </SidebarMenuItem>
 
             <SidebarMenuItem>
-              <SidebarMenuButton className="text-white hover:bg-blue-700 hover:text-white">
+              <SidebarMenuButton className="text-white hover:bg-pink-800 hover:text-white">
                 <Link
                   href="/admin/profile"
                   className="flex items-center gap-3">
@@ -106,8 +106,7 @@ export default function AppSidebar() {
           </SidebarMenu>
         </SidebarGroup>
       </SidebarContent>
-      <SidebarFooter className="!bg-blue-600" />
-
+      <SidebarFooter className="!bg-pink-800" />
 
     </Sidebar>
   )

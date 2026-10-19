@@ -1,6 +1,6 @@
 export function LandingPageHero() {
     return (
-        <section className="flex flex-1 w-full min-h-[115vh] bg-blue-800 dark:bg-black items-center justify-center px-6 text-center">
+        <section className="flex flex-1 w-full min-h-[115vh] bg-pink-800 dark:bg-black items-center justify-center px-6 text-center">
             <div className="container">
                 <div>
                     <h1 className="font-mono text-4xl font-bold tracking-tight text-white sm:text-6xl">
@@ -12,7 +12,7 @@ export function LandingPageHero() {
                         max-w-2xl 
                         text-base 
                         leading-7 
-                        text-blue-100 
+                        text-pink-100 
                         sm:text-lg">
                         SMK MVP ARS INTERNASIONAL is a leading educational institution dedicated to providing high-quality education and fostering a nurturing environment for students to thrive academically and personally.
                     </p>

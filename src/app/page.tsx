@@ -22,7 +22,7 @@ export default function Home() {
         <LandingPageHero /> 
       </div>
       <div className="absolute top-0 left-0 z-10 w-full flex justify-center">
-        <div className="w-[95%] h-[80px] bg-blue-800 dark:bg-blue-800 rounded-[70px] flex mt-4 mx-8 p-4">
+        <div className="w-[95%] h-[80px] bg-pink-800 dark:bg-pink-800 rounded-[70px] flex mt-4 mx-8 p-4">
           {/* logo */}
           <div className="relative w-[200px] h-[50px] rounded-[70px] items-center justify-start">
             <Image className="p-[7px]" src="/img/smk_mvp_ars_logo_white.png" alt="logo" fill />
